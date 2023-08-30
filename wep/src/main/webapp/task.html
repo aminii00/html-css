@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>웹 표준에 맞는 HTML5 프로그래밍 과제</title>
+<style>
+
+  @import url('https://fonts.googleapis.com/css2?family=Dongle&display=swap');
+
+
+body {
+
+   font-size :25px;
+   font-family: 'Dongle', sans-serif;
+}
+form label.reg {
+ color : #390;
+}
+
+form fieldset {
+  border-radius : 5px;
+  margin-bottom:25px;
+  border:2px solid #a6a6a6;
+}
+
+ ul li {
+   list-style:none;
+   margin :15px 0;
+ }
+
+ .sbm {
+   font-size :25px;
+   font-family: 'Dongle', sans-serif;
+   
+   background-color:#fff;
+   border:1px solid #dedede;
+   cursor:pointer;
+ }
+ .sbm:hover{
+ text-align : center;
+  background-color: pink;
+  color: purple;
+ }
+</style>
+</head>
+
+<body>
+<form method ="get" action ="task" encType="utf-8">
+
+
+   <fieldset>
+   <legend> <strong>회원가입</strong></legend>
+  
+<fieldset>
+
+  <ul>
+  <li> <label class ="reg" for = "user_id"> 아이디: </label>
+  <input type ="text" size = "15" id="user_id" name= "user_id" >
+  </li>
+  <li> <label class ="reg" for = "user_pw"> 비밀번호: </label>
+  <input type ="password" size = "15" id="user_pw" name ="user_pw">
+  </li>
+  <li> <label class ="reg" for = "user_pw2">비밀번호 확인: </label>
+  <input type ="password" size = "15" id="user_pw2" name= "user_pw2" >
+  </li>
+  <li> <label class ="reg" for = "user_name">이름 : </label>
+  <input type ="text" size = "15" id="user_name" name= "user_name" >
+  </li>
+  <li> <label class ="reg" for = "user_birth">생년월일: </label>
+  <input type ="date" size = "15" id="user_birth" name= "user_birth" >
+  </li>
+  <li> <label class ="reg" for = "user_tel">휴대폰 번호: </label>
+  <input type ="tel" size = "15" id="user_tel"  name= "user_tel">
+  </li>
+  <li> <label class ="reg" for = "user_mail">이메일: </label>
+  <input type ="email" size = "15" id="user_mail" name= "user_mail" >
+  </li>
+  <li> <label class ="reg" for = "user_addr">주소: </label>
+  <input type ="text" size = "15" id="user_addr" name= "user_addr">
+  </li>
+   </ul>
+   
+   </fieldset>
+   
+   <input type ="submit" value = "이전" class ="sbm">
+   <input type ="submit" value = "가입하기" class ="sbm"> 
+  
+  </fieldset>
+  
+</form>
+</body>
+</html>

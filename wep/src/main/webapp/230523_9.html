@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<Style>
+  div#wrapper{
+    position:relative;
+  }
+  .box{
+    position:absolute;
+    width:100px;
+    height:100px;
+    border:1px solid #f2f2f2;
+    font-size:26px;
+  }
+  #b1 {
+    font-size:14px;
+    left:50px;
+    top:50px;
+    background:#ffd9cc;
+    z-index:1;
+  }
+  #b2 {
+    font-size:14px;
+    left:110px;
+    top:70px;
+    background:#ffffcc;
+    z-index:3;
+  }
+  #b3 {
+    font-size:14px;
+    left:70px;
+    top:110px;
+    background:#e6ffcc;
+    z-index:2;
+  }
+  
+</Style>
+</head>
+<body>
+<div id="wrapper">
+  <div id ="b1" class="box">1</div>
+  <div id ="b2" class="box">2</div>
+  <div id ="b3" class="box">3</div>
+</div>
+</body>
+</html>

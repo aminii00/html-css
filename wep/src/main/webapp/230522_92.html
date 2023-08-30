@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style>
+  div {
+    width:380px;
+    height:400px;
+    margin:20px;
+    display:inline-block;  /*옆으로 촤라라*/
+  }
+  .round{
+    border:2px solid pink;
+    border-radius:80px/40px;     /*모서리 둥근 정도 가로 / 세로 */
+  }
+  #bg{
+    background:url(images/v.png) no-repeat;  
+    background-size:cover;  /*영역을 다 채워서*/
+  }
+</style>
+</head>
+<body>
+  <div class ="round"></div>
+  <div class ="round" id="bg"></div>
+</body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style>
+  body{
+    background-color:#fff;
+  }
+  form fieldset{
+    margin-bottom:25px;
+  }
+  form legend{
+    font-size:15px;
+    font-weight:600px;
+  }
+  input:disabled {  /* 사용할 수 없을 때 , 사용 가능할때는 enabled*/
+    background:#ddd;
+    border:1px #ccc solid;
+  }
+  input:checked + span{
+    color:blue;
+  }
+</style>
+</head>
+<body>
+<form>
+  <fieldset>
+    <legend>사용자 정보</legend>
+    <label>이름 <input type ="text" disabled></label>
+  </fieldset>
+  <fieldset>
+    <legend>신청 과목</legend>
+    <p>이 달에 신청할 과목을 선택하세요.</p>
+    <label><input type = "checkbox" name ="subject" value="speaking"><span>회화</span></label>
+    <label><input type = "checkbox" name ="subject" value="grammar"><span>문법</span></label>
+    <label><input type = "checkbox" name ="subject" value="writing"><span>작문</span></label>
+    <br>
+    <label><input type = "radio" name ="subject" value="speaking"><span>r회화</span></label>
+    <label><input type = "radio" name ="subject" value="grammar"><span>r문법</span></label>
+    <label><input type = "radio" name ="subject" value="writing"><span>r작문</span></label>
+  </fieldset>
+</form>
+</body>
+</html>

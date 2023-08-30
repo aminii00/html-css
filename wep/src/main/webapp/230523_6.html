@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+ <style>
+   #wrap{
+     position:relative; 
+     width:300px;
+     height:300px;
+     border:1px solid #ccc;
+   }
+   .box{
+    position:absolute;   /*position:absolute 원하는 위치에 요소를 배치시키기. 반드시 relative인 요소가 있어야함*/
+     width:50px;
+     height:50px;
+     background: #ffcccc;
+   }
+   #crd1{top:0px; left:0px;}
+   #crd2{top:0px; left:250px;}
+   #crd3{top:100px; left:100px;}
+   #crd4{top:250px; left:0px;}
+   #crd5{top:250px; left:250px;}
+ </style>
+</head>
+<body>
+<div id =wrap>
+<div class ="box" id ="crd1"></div>
+<div class ="box" id ="crd2"></div>
+<div class ="box" id ="crd3"></div>
+<div class ="box" id ="crd4"></div>
+<div class ="box" id ="crd5"></div>
+</div>
+</body>
+</html>

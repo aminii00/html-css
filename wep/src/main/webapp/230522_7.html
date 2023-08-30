@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>display 속성</title>
+<style>
+ nav {
+   width:100%;
+   height:60px;
+   background-color:pink;
+ }
+ nav ul {
+   list-style-type : none;  /* ul의 포인트점 없애기*/
+ }
+ nav ul li{
+   display: inline-block;  /* 옆으로 촤라라*/
+   margin:20px;
+ }
+ nav ul li a {
+   color: white;       /*글자 색*/
+   text-decoration :none;  /* 글자 밑 선 없애기 */
+ }
+ nav ul li:hover {
+   background-color: purple;  /* 마우스 갖다 대면 보라색 */
+ }
+</style>
+</head>
+<body>
+<nav>
+  <ul>
+    <li><a href="#">애완견 종류</a></li>
+    <li><a href="#">입양하기</a></li>
+    <li><a href="#">건강 돌보기</a></li>
+    <li><a href="#">더불어 살기</a></li>
+  </ul>
+</nav>
+</body>
+</html>
