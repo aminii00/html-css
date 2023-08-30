@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Insert title here</title>
+<script src="https://code.jquery.com/jquery-3.6.4.min.js" 
+integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" 
+crossorigin="anonymous"></script>
+<script>
+$(function(){
+	$("<li>appendTo</li>").appendTo("#listZone");
+	/*<li>appendTo</li>를 listZone 뒤에 이어붙여라 -> 2인덱스*/
+	$("#listZone").prepend("<li>prepend</li>");
+	/*listZone의 앞에 <li>prepend</li>를 붙여라 -> 0인덱스*/
+});
+</script>
+</head>
+<body>
+<ul id ="listZone">
+  <li>리스트</li>
+</ul>
+</body>
+</html>

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style>
+
+#sp {
+ color : purple;
+}
+</style>
+</head>
+<body>
+<Script>
+var go = prompt("가위바위보 게임을 시작할까요? 1:예 2:아니오","");
+if(go==1){
+	
+var me = prompt("나 : 가위, 바위, 보 중 선택하세요.", "");
+var you = prompt("상대방 : 가위, 바위, 보 중 선택하세요.", "");
+
+var meNum;
+var youNum;
+
+switch(me){
+case "가위" : meNum = 1;
+break;
+case "바위" : meNum = 2;
+break;
+case "보" : meNum = 3;
+break;
+default: alert("잘못작성하셨습니다.");
+location.reload();
+}
+
+switch(you){
+case "가위" : youNum = 1;
+break;
+case "바위" : youNum = 2;
+break;
+case "보" : youNum = 3;
+break;
+default: alert("잘못작성하셨습니다.");
+location.reload();
+}
+ if(meNum == youNum){
+	 document.write("<img src=\"images/"+meNum+".jpg\" width=200px>");
+	 document.write("<span style = 'font-size:50px'>VS</span> ");
+	 document.write("<img src=\"images/"+youNum+".jpg\" width=200px><br>");
+	 document.write("<span id='sp'>나 : </span>" + me + " <span id='sp'>"+ " 상대방 : </span>" + you +"<br>");
+	 document.write("비겼습니다.");
+ }else if (meNum < youNum && youNum < 3) {
+	 document.write("<img src=\"images/"+meNum+".jpg\" width=200px>");
+	 document.write("<span style = 'font-size:50px'>VS</span> ");
+	 document.write("<img src=\"images/"+youNum+".jpg\" width=200px><br>");
+	 document.write("<span id='sp'>나 : </span>" + me + " <span id='sp'>"+ " 상대방 : </span>" + you +"<br>");
+	 document.write("'상대방'(이)가 이겼습니다.");
+ }else if (meNum<youNum && meNum>1){
+	 document.write("<img src=\"images/"+meNum+".jpg\" width=200px>");
+	 document.write("<span style = 'font-size:50px'>VS</span> ");
+	 document.write("<img src=\"images/"+youNum+".jpg\" width=200px><br>");
+	 document.write("<span id='sp'>나 : </span>" + me + " <span id='sp'>"+ " 상대방 : </span>" + you +"<br>");
+	 document.write("'상대방'(이)가 이겼습니다.");
+ }else if(meNum>youNum && youNum>1){
+	 document.write("<img src=\"images/"+meNum+".jpg\" width=200px>");
+	 document.write("<span style = 'font-size:50px'>VS</span> ");
+	 document.write("<img src=\"images/"+youNum+".jpg\" width=200px><br>");
+	 document.write("<span id='sp'>나 : </span>" + me + " <span id='sp'>"+ " 상대방 : </span>" + you +"<br>");
+	 document.write("'나'(이)가 이겼습니다.");
+ }else if(meNum>youNum && meNum<3){
+	 document.write("<img src=\"images/"+meNum+".jpg\" width=200px>");
+	 document.write("<span style = 'font-size:50px'>VS</span> ");
+	 document.write("<img src=\"images/"+youNum+".jpg\" width=200px><br>");
+	 document.write("<span id='sp'>나 : </span>" + me + " <span id='sp'>"+ " 상대방 : </span>" + you +"<br>");
+	 document.write("'나'(이)가 이겼습니다.");
+ }else{
+	 document.write("<img src=\"images/"+meNum+".jpg\" width=200px>");
+	 document.write("<span style = 'font-size:50px'>VS</span> ");
+	 document.write("<img src=\"images/"+youNum+".jpg\" width=300px><br>");
+	 document.write("<span id='sp'>나 : </span>" + me + " <span id='sp'>"+ " 상대방 : </span>" + you +"<br>");
+	 document.write("'상대방'(이)가 이겼습니다.");
+ }
+ 
+}
+else{document.write("종료");}
+
+</script>
+</head>
+<body>
+ <button onclick ="location.reload();">다시하기</button>
+</body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+<script src="https://code.jquery.com/jquery-3.6.4.min.js" 
+integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" 
+crossorigin="anonymous"></script>
+<script>
+$(function(){
+	$(".btn_1").on("mouseover", function(){
+		alert("HELLO!");
+		// 클래스 btn_1 버튼1에 마우스 올려놓으면 alert로 Hello!
+	});
+	$(document).on("mouseover", ".btn_2",function(){
+		alert("WELCOME!");
+		// 클래스 btn_2 버튼2에 마우스 올려놓으면 alert로 Hello! btn_2는 밑에서 생성@@
+	});
+	var btn_2 = $("<p><button class = \"btn_2\">버튼2</button></p>");
+	// btn_2 변수 생성하여 <p><button class = \"btn_2\">버튼2</button></p>를 저장
+	$("#wrap").append(btn_2);
+	// id = wrap에 btn_2 추가!
+	$(".del_1").on("click", function(){
+		$(".btn_1").off("mouseover");
+		// class del_1 버튼1을 클릭하면 클래스 btn_1 mouseover해제
+	});
+	$(".del_2").on("click", function(){
+		$(document).off("mouseover",".btn_2");
+		// class del_2 버튼2를 클릭하면 클래스 btn_1 mouseover해제
+	});
+});
+</script>
+</head>
+<body>
+<div id ="wrap">
+  <p><button class ="btn_1">버튼1</button>
+</div>
+<p>
+  <button class = "del_1">버튼1 이벤트 해지</button>
+  <button class = "del_2">버튼2 이벤트 해지</button>
+</p>
+</body>
+</html>

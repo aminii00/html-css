@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+<script src="https://code.jquery.com/jquery-3.6.4.min.js" 
+integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" 
+crossorigin="anonymous"></script>
+<script>
+$(function(){
+	$(document).ready(function(){
+		var h1 =$(".img1").height();
+		console.log("ready: ", h1);
+	});
+	
+	/* 버전에 따라 다름
+	$(window).load(function(){
+		var h2 =$(".img1").height();
+		console.log("load :", h2);
+	});
+	*/
+	
+	
+	$(window).on('load', function(){
+		var h2 =$(".img1").height();
+		console.log("load :", h2);
+	});
+	
+
+});
+</script>
+</head>
+<body>
+<p>
+<img src ="http://place-hold.it/300X300" class="img1">
+</p>
+</body>
+</html>

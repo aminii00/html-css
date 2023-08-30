@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style>
+ *{
+   background-color:#f2f2f2;
+ }
+</style>
+<script>
+document.write("== 홀수 == <br>")
+for (var i=1; i<=10; i++){
+	if(i%2==0)continue;
+	document.write("<span style ='color:red'>",i,"</span><br>");
+}
+document.write("<br>");
+
+document.write("== 짝수 == <br>")
+for (var i=1; i<=10; i++){
+	if(i%2==1)continue;
+	document.write("<span style ='color:orange'>",i,"</span><br>");
+}
+document.write("<br>");
+
+document.write("== 3의 배수 == <br>")
+for (var i=1; i<=10; i++){
+	if(i%3!=0)continue;
+	document.write("<span style ='color:#8cff66'>",i,"</span><br>");
+}
+document.write("<br>");
+
+document.write("== 7의 배수 == <br>")
+for (var i=1; i<=50; i++){
+	if(i%7!=0)continue;
+	document.write("<span style = 'color:green'>", i,"</span><br>");
+}
+
+document.write("<br> --- The End --- <br>")
+</script>
+</head>
+<body>
+
+</body>
+</html>

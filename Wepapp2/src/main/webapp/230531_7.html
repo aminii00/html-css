@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+<script src="https://code.jquery.com/jquery-3.6.4.min.js" 
+integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" 
+crossorigin="anonymous"></script>
+<script>
+function fn_process(){
+	var value = $("#t_input").val();
+	$("#t_output").val(value);
+}
+</script>
+</head>
+<body>
+<input type ="text" id ="t_input" />
+<input type = "button" value="입력하기" onClick="fn_process()"/><br><br>
+<div>
+결과 : <br>
+<input type ="text" id ="t_output" disabled/>
+</div>
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+<script src="https://code.jquery.com/jquery-3.6.4.min.js" 
+integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" 
+crossorigin="anonymous"></script>
+<script>
+$(function(){
+	$(".btn_wrap").delegate(".btn1.on","mouseover focus", function(){
+		alert("Hello");
+	});
+	
+	$(".btn1").addClass("on");
+	
+	$(document).one("mouseover focus",".btn2.on",function(){
+		alert("WELCOME!");
+	});
+	$(".btn2").addClass("on");
+	
+});
+</script>
+</head>
+<body>
+<div id ="wrap">
+  <p class ="btn_wrap"> <button class = "btn1">버튼1</button></p>
+  <p><button class = "btn2">버튼2</button></p>
+</div>
+</body>
+</html>

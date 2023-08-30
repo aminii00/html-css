@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script>
+ function aaa() {
+	 var a = 5;
+	 var b = a+5;
+	 var c = b+5;
+	 document.write("b = " + b + "<br>");
+	 document.write("c = " + c + "<br>");
+ }
+ function bbb(){
+	 
+	 var num1 = prompt("1. 숫자를 입력하시오.", );
+	 var num2 = prompt("2. 숫자를 입력하시오.", );
+	 
+	 num1=parseInt(num1);
+	 
+	 for (var i=0; i<100000000; i++){
+		 if (num2 == [i]){
+			 num2 = i;
+			 break;
+		 }
+	 }
+	 
+
+	 var sum =  num1+num2;
+	 var sub =  num1-num2;
+	 var mul =  num1*num2;
+	 var div =  num1/num2;
+	 
+	 document.write("더하기 : " + sum + "<br>");
+	 document.write("빼기 : " + sub + "<br>");
+	 document.write("곱하기 : " + mul + "<br>");
+	 document.write("나누기 : " + div + "<br>");
+	 
+ }
+</script>
+</head>
+<body>
+<button onclick = "aaa()">aaa()호출</button>
+
+<button onclick = "bbb()">계산기</button>
+</body>
+</html>
